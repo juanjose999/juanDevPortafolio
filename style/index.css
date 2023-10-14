@@ -12,18 +12,21 @@ body {
 
 header  {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #1f79d9;
-    border-radius: 2em;
+    border-radius: 1em;
     position: fixed;
     width: 86%;
+    height: 4em;
     top: 0;
     margin-top: 2em;
     z-index: 1000;
     margin-left: 7%;
 }
-
+header div {
+    margin: 0.6em;
+}
 header nav ul {
     display: flex;
     list-style-type: none;
@@ -74,11 +77,20 @@ main {
 }
 
 .name {
-    border: solid red 10px;
     text-align: center;
     margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
 }
-
+.sub {
+    background: #1f79d9;
+    padding: 0.1em;
+    border-radius: 0.2em;
+}
+.name .sub {
+    margin-top: 2em;
+}
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -135,4 +147,54 @@ main {
 
 .menu-Toggle:hover .options {
     display: block; /* Mostrar opciones cuando el menú está en hover */
+}
+.tecnologias figure img {
+    width: 4em;
+}
+.tecnologias {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.tecnologias article {
+    transition: transform 0.3s ease-in-out;
+}
+.tecnologias article:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+.galery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+.card {
+    background-color: white;
+    width: 18em;
+    height: 12em;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f79d9;
+    padding: 2em;
+    margin-top: 2em;
+}
+.logoFooter img {
+    width: 6em;
+}
+footer .list ul li{
+    text-decoration: none;
+    list-style-type: none;
 }
